@@ -1,11 +1,7 @@
-import celery
 from rest_framework import status
-import uuid
 from .models import Task
 from rest_framework.test import APITestCase
-from unittest.mock import MagicMock, PropertyMock
 from unittest.mock import patch
-from pomodoro.views import change_task_status
 from celery.result import AsyncResult
 
 
